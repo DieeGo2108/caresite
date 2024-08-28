@@ -9,6 +9,7 @@
   --bg-color-bright: #007ba0a8;
   --txt-color: white;
   --scnd-txt-color: #76cbff; 
+  --bg-color: #000034;
 }
 
 ::-webkit-scrollbar {
