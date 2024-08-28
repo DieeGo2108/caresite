@@ -6,10 +6,10 @@
 
 :root{
   --bg-color: #00004c;
+  --bg-color: #000034;
   --bg-color-bright: #007ba0a8;
   --txt-color: white;
   --scnd-txt-color: #76cbff; 
-  --bg-color: #000034;
 }
 
 ::-webkit-scrollbar {
@@ -216,7 +216,7 @@ p{
   align-items: center;
 }
 .process-card{
-  background-color: #000062;
+  background-color: #000050;
   width: 430px;
   padding: 30px;
   border-radius: 30px;
@@ -253,7 +253,7 @@ p{
 }
 .WhyChooseUs .row{
   flex-direction: row;
-  background-color: #000062;
+  background-color: #000050;
   margin-top: 40px;
   padding: 10px 0px;
   border-radius: 30px;
@@ -343,7 +343,7 @@ p{
 
 .price-card{
   margin: auto;
-  background-color: #000062;
+  background-color: #000050;
   padding: 30px;
   text-align: start;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
