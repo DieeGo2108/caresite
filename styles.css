@@ -1,0 +1,633 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-color: #00004c;
+  --bg-color-bright: #007ba0a8;
+  --txt-color: white;
+  --scnd-txt-color: #76cbff; 
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scnd-txt-color);
+  border-radius: 3em;}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, #c5c3c35c, #c5c3c39c);
+    border-radius: 3em;
+}
+
+body{
+  background: var(--bg-color);
+  font-family: Arial, sans-serif;
+  color: var(--txt-color);
+}
+section{
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 150px;
+}
+.col, .col-6, .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}.col, .col-6{
+  flex-direction: column;
+}
+
+
+/********text***********/
+.hero{
+  padding-bottom: 300px;
+}
+.hero h1{
+  font-size: 4.9rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 20px;
+  margin: auto;
+  max-width: 820px;
+}
+
+h1{
+  font-size: 4.8rem;
+  font-weight: 700;
+  max-width: 820px;
+  margin: 20px auto;
+  letter-spacing: -2px;
+}
+
+.text-span{
+  color: var(--scnd-txt-color);
+  position: relative;
+  background-image: linear-gradient(#fff0 75%, #fbe6d338 75%);
+}
+
+.gold{
+  color: #ddbc01;
+}
+
+p{
+  color: var(--scnd-txt-color);
+  font-size: 19px;
+  max-width: 640px;
+  margin: 20px auto;
+}
+
+/********button*********/
+.btn{
+  color: var(--txt-color);
+  border: 1px solid var(--txt-color);
+  width: 200px;
+  padding: 15px;
+  border-radius: 35px;
+  transition: all .3s;
+}
+.btn:hover{
+  border: 1px solid var(--txt-color);
+  box-shadow: 0 10px 1000px 2px;
+  transform: scale(1.05);
+}
+
+.btn-sml{
+  padding: 5px;
+  width: 150px;
+}
+.btn-sml:hover{
+  background-color: transparent;
+  border: 1px solid var(--txt-color);
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*******FOMO (FEAR OF MISSING OUT)*********/
+.FOMO{
+  width: 100%;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/************navbar***********/
+.navbar, .navbar .container-fluid, .navbar .navbar-nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo{
+  width: 120px;
+}
+.navbar-nav a{
+  color: white;
+  opacity: .7;
+  transition: opacity .3s linear;
+  margin: 0 10px;
+}
+.navbar-brand {
+  opacity: 1;
+  padding: 10px;
+}
+.nav-link:focus, .nav-link:hover{
+  color: white;
+  opacity: 1;
+}
+
+.nav-link:first-child{
+  width: 115px;
+}
+
+.navbar-collapse {
+  max-width: 300px;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+/**********hero*******/
+.hero{
+  display: flex;
+  gap: 21px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.reviews-hero-container{
+  display: flex;
+  margin-top: 100px;
+  gap: 60px;
+  padding: 0 20px;
+}
+.reviews-hero-container i{
+  color: #c2a501;
+  font-size: 12px;
+}
+
+.reviews-hero-container h6{
+  font-weight: 400;
+  font-size: 14px;
+  max-width: 150px;
+  font-style: italic;
+}
+
+.slider{
+  margin-top: 70px;
+  border-radius: 20px;
+  height: 100%;
+  padding: 10px;
+  box-shadow: /*0 0 100px 10px var(--scnd-txt-color)*/ 0 0 1000px 20px #76cbff96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 900px;
+}
+.slider img{
+  border-radius: 20px;
+}
+
+/***********process*********/
+.process .row{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.process h2{
+  font-size: 37px;
+  margin: 20px auto;
+  font-weight: 700;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.process-card{
+  background-color: #000062;
+  width: 430px;
+  padding: 30px;
+  border-radius: 30px;
+  height: 578px;
+  margin: 0 20px;
+}
+.process-card h6{
+  font-size: 20px;
+  font-weight: 400;
+  opacity: .8;
+}
+.process-card p{
+  font-size: 16px;
+  color: white;
+}
+.process-card img{
+  width: 100%;
+  border-radius: 30px;
+  margin: 20px auto;
+}
+.process-card .timeline{
+  padding: 10px;
+  background-color: #a9c7ff33;
+  border-radius: 10px;
+  width: 300px;
+  margin: auto;
+}
+/*********why choose us**************/
+.WhyChooseUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.WhyChooseUs .row{
+  flex-direction: row;
+  background-color: #000062;
+  margin-top: 40px;
+  padding: 10px 0px;
+  border-radius: 30px;
+  max-width: 770px;
+  width: 100%;
+}
+
+.Wcu{
+  text-align: end;
+  margin: auto;
+  width: calc(100% / 3);
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.Wcu h4{
+  opacity: .8;
+}
+.Wcu1 h6{
+  font-weight: 700;
+}
+
+.Wcu1{
+  padding-right: 20px;
+}
+.Wcu2{
+  background-color: var(--bg-color-bright);
+  border-radius: 30px;
+  text-align: center;
+}
+.Wcu3{
+  text-align: center;
+  opacity: .78;
+  padding-left: 20px;
+}
+
+/************Recent Work***********/
+.recentWork .div{
+  max-width: 950px;
+  margin: auto;
+  padding-top: 50px;
+}
+.recentWork .row{
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.recentWork .col{
+  padding: 10px;
+  border-radius: 30px;
+  background-color: black;
+  transition: all .3s;
+  min-width: 338px;
+}
+.recentWork img{
+  border-radius: 30px;
+}
+
+.recentWork .col:hover{
+  box-shadow: #76cbff60 0 0 100px 10px;
+}
+/********precios**********/
+
+.carousel-price{
+  margin-top: 70px;
+  display: none;
+}
+.carousel-price button i{
+  font-size: 50px;
+  color: #76cbff;
+}
+.carousel-price .price-card{
+  border-radius: 30px;
+  margin: auto;
+}
+.carousel-price .best-price{
+  height: 635px;
+}
+
+.precios .row{
+  gap: 0;
+  display: flex;
+  margin-top: 60px;
+}
+
+.price-card{
+  margin: auto;
+  background-color: #000062;
+  padding: 30px;
+  text-align: start;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  border-radius: 30px 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  min-width: 317px;
+  max-width: 387px;
+  margin: 0;
+}
+.best-price{
+  background-color: var(--bg-color-bright);
+  height: 775px;
+  border-radius: 30px;
+}
+.premium{
+  border-radius: 0 30px 30px 0;
+}
+
+.price-card h5{
+  font-weight: 700;
+}
+.price-card h2{
+   display: flex;
+   align-items: flex-end;
+   gap: 0;
+   font-size: 45px;
+  }
+  .price-card h2 p{
+    margin: 0;
+    opacity: 1;
+   }
+
+.price-card p{
+  color: white;
+  font-size: 15px;
+  opacity: .8;
+}
+
+ul{
+  list-style: none;
+}
+li{
+  margin: 20px 0;
+  font-size: 17px;
+}
+ul i{
+  color: var(--primary-color);
+}
+
+/************reviews************/
+.reviews p{
+  max-width:400px;
+  color: white;
+  min-width: 200px;
+  width: 400px;
+}
+.reviews .col-6{
+  justify-content: flex-start;
+  height: 200px;
+  margin-bottom: 50px;
+}
+.reviews .row{
+  margin: 40px 0;
+}
+
+.reviews i{
+  color: #c2a501;
+}
+
+/***********FAQ**********/
+
+.accordion {
+  background-color: var(--bg-color-bright);
+  color: #ffffff;
+  cursor: pointer;
+  padding: 28px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 23px;
+  font-weight: 600;
+  transition: 0.4s;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 30px;
+  max-width: 800px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.FAQ .active, .accordion:hover {
+  background-color: #176da3;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.FAQ .active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: start;
+  max-width: 800px;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.panel p{
+  max-width: 100%;
+  margin: 20px;
+  color: white;
+}
+
+/*******Book a call******/
+.book-a-call .btn{
+  margin-top: 20px;
+}
+.book-a-call .btn:hover{
+  box-shadow: 0 10px 1000px 2px #ffffff3b;
+  transform: scale(1.01);
+}
+
+.book-a-call div{
+  margin: auto;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-bright);
+  border-radius: 30px;
+  padding: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.book-a-call p{
+  color: white;
+  margin: auto;
+}
+
+.book-a-call h2{
+  font-size: 50px;
+  line-height: 45px;
+  font-weight: 700;
+}
+.book-a-call h4{
+  opacity: .7;
+}
+
+/********footer*********/
+footer{
+  padding: 50px;
+}
+footer p{
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 15px;
+}
+
+/********responsive**********/
+@media (max-width: 1200px){
+  .price-card{
+    gap: 2px;
+  }
+
+  .reviews p{
+    width: 300px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1089px){
+  .slider{
+    width: 80%;
+  }
+  .precios .row{
+    display: none;
+  }
+  .carousel-price{
+    display: block;
+  }
+}
+@media (max-width: 991px){
+  .navbar-collapse {
+    max-width: 1000px;
+    text-align: end;
+  }
+
+  .reviews-hero-container {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 916px){
+.navbar .container-fluid{
+  justify-content: space-between;
+  padding: 0 50px;
+}
+}
+
+
+@media (max-width: 768px){
+  .Wcu h6{
+    font-size: .7rem;
+  }
+  .Wcu2 h6{
+    font-size: .89rem;
+  }
+
+  .reviews p{
+    width: auto;
+  }
+}
+
+@media (max-width: 643px){
+  .FOMO {
+    display: none;
+  }
+
+  .slider{
+    width: 90%;
+  }
+
+  h1{
+    font-size: 4.3rem;
+  }
+
+  .book-a-call h2{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 518px){
+  .reviews .col-6{
+    width: 100%;
+    flex: auto;
+  }
+
+  .hero p{
+    padding: 0 50px;
+  }
+
+  .hero h1{
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 406px){
+  .rvw-h{
+    display: none;
+  }
+}
+
+@media (max-width: 406px){
+  .Wcu h6{
+    font-size: .7rem;
+  }
+  .Wcu2 h6{
+    font-size: .7rem;
+  }
+  .Wcu3 h4{
+    margin-bottom: 30px;
+  }
+
+  .Wcu h6 span{
+    display: none;
+  }
+
+  h1{
+    font-size: 3.7rem;
+  }
+
+  .hero h1{
+    font-size: 3.7rem;
+  }
+}
