@@ -631,4 +631,10 @@ footer p{
   .hero h1{
     font-size: 3.7rem;
   }
+
+  .hero{
+    gap: 0;
+  }
+  .slider {
+    margin-top: 40px;}
 }
