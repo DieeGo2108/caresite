@@ -554,6 +554,7 @@ footer p{
   justify-content: space-between;
   padding: 0 50px;
 }
+
 }
 
 
@@ -601,6 +602,10 @@ footer p{
   .hero h1{
     font-size: 4rem;
   }
+
+  .process-card {
+    width: 340px;
+    }
 }
 
 @media (max-width: 406px){
@@ -637,4 +642,5 @@ footer p{
   }
   .slider {
     margin-top: 40px;}
+
 }
