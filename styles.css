@@ -395,6 +395,16 @@ ul i{
   color: var(--primary-color);
 }
 
+.price-card a{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  max-width: 300px;
+  margin: auto;
+  outline: none;
+}
+
+
 /************reviews************/
 .reviews p{
   max-width:400px;
@@ -413,6 +423,9 @@ ul i{
 
 .reviews i{
   color: #c2a501;
+}
+.reviews{
+  padding-bottom: 0;
 }
 
 /***********FAQ**********/
@@ -503,6 +516,9 @@ ul i{
 }
 .book-a-call h4{
   opacity: .7;
+}
+.book-a-call{
+  margin-bottom: 100px;
 }
 
 /********footer*********/
